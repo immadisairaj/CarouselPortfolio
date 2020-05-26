@@ -35,7 +35,7 @@ class _HomeMobile extends State<HomeMobile> {
         child: Column(
           children: [
             TopContainer(
-              height: 310,
+              height: 290,
               width: width,
               child: Column(
                 children: [
@@ -76,7 +76,7 @@ class _HomeMobile extends State<HomeMobile> {
                                   pause: Duration(milliseconds:  1000),
                                   text: ["Sai Rajendra Immadi"],
                                   speed: Duration(milliseconds: 300),
-                                  textStyle: TextStyle(fontSize: 32.0, color: Colors.white, fontWeight: FontWeight.w800),
+                                  textStyle: TextStyle(fontSize: 28.0, color: Colors.white, fontWeight: FontWeight.w800),
                                 ),
                               ),
                             ),
@@ -147,7 +147,7 @@ class _HomeMobile extends State<HomeMobile> {
                             child: Text(
                               '"Live the life upto your Maximum"',
                               style: TextStyle(
-                                fontSize: 20,
+                                fontSize: 17,
                                 color: CustomColors.cRed,
                               ),
                             ),
@@ -155,54 +155,78 @@ class _HomeMobile extends State<HomeMobile> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Card(
-                                child: IconButton(
-                                  icon: FaIcon(FontAwesomeIcons.github),
-                                  onPressed: (){
-                                    html.window.open('https://github.com/immadisairaj/', 'GitHub');
-                                  },
-                                ),
-                              ).showCursorOnHover.moveUpOnHover,
-                              Card(
-                                child: IconButton(
-                                  icon: FaIcon(FontAwesomeIcons.gitlab),
-                                  onPressed: (){
-                                    html.window.open('https://gitlab.com/immadisairaj', 'GitLab');
-                                  },
-                                ),
-                              ).showCursorOnHover.moveUpOnHover,
-                              Card(
-                                child: IconButton(
-                                  icon: FaIcon(FontAwesomeIcons.linkedinIn),
-                                  onPressed: (){
-                                    html.window.open('https://www.linkedin.com/in/immadisairaj/', 'LinkedIn');
-                                  },
-                                ),
-                              ).showCursorOnHover.moveUpOnHover,
-                              Card(
-                                child: IconButton(
-                                  icon: FaIcon(FontAwesomeIcons.twitter),
-                                  onPressed: (){
-                                    html.window.open('https://twitter.com/immadisairaj', 'Twitter');
-                                  },
-                                ),
-                              ).showCursorOnHover.moveUpOnHover,
-                              Card(
-                                child: IconButton(
-                                  icon: FaIcon(FontAwesomeIcons.instagram),
-                                  onPressed: (){
-                                    html.window.open('https://www.instagram.com/immadisairaj/', 'Instagram');
-                                  },
-                                ),
-                              ).showCursorOnHover.moveUpOnHover,
-                              Card(
-                                child: IconButton(
-                                  icon: Icon(Icons.mail_outline),
-                                  onPressed: (){
-                                    html.window.open('mailto:immadirajendra.sai@gmail.com', 'Mail');
-                                  },
-                                ),
-                              ).showCursorOnHover.moveUpOnHover,
+                              SizedBox(
+                                height: 50,
+                                width: 50,
+                                child: Card(
+                                  child: IconButton(
+                                    icon: FaIcon(FontAwesomeIcons.github),
+                                    onPressed: (){
+                                      html.window.open('https://github.com/immadisairaj/', 'GitHub');
+                                    },
+                                  ),
+                                ).showCursorOnHover.moveUpOnHover,
+                              ),
+                              SizedBox(
+                                height: 50,
+                                width: 50,
+                                child: Card(
+                                  child: IconButton(
+                                    icon: FaIcon(FontAwesomeIcons.gitlab),
+                                    onPressed: (){
+                                      html.window.open('https://gitlab.com/immadisairaj', 'GitLab');
+                                    },
+                                  ),
+                                ).showCursorOnHover.moveUpOnHover,
+                              ),
+                              SizedBox(
+                                height: 50,
+                                width: 50,
+                                child: Card(
+                                  child: IconButton(
+                                    icon: FaIcon(FontAwesomeIcons.linkedinIn),
+                                    onPressed: (){
+                                      html.window.open('https://www.linkedin.com/in/immadisairaj/', 'LinkedIn');
+                                    },
+                                  ),
+                                ).showCursorOnHover.moveUpOnHover,
+                              ),
+                              SizedBox(
+                                height: 50,
+                                width: 50,
+                                child: Card(
+                                  child: IconButton(
+                                    icon: FaIcon(FontAwesomeIcons.twitter),
+                                    onPressed: (){
+                                      html.window.open('https://twitter.com/immadisairaj', 'Twitter');
+                                    },
+                                  ),
+                                ).showCursorOnHover.moveUpOnHover,
+                              ),
+                              SizedBox(
+                                height: 50,
+                                width: 50,
+                                child: Card(
+                                  child: IconButton(
+                                    icon: FaIcon(FontAwesomeIcons.instagram),
+                                    onPressed: (){
+                                      html.window.open('https://www.instagram.com/immadisairaj/', 'Instagram');
+                                    },
+                                  ),
+                                ).showCursorOnHover.moveUpOnHover,
+                              ),
+                              SizedBox(
+                                height: 50,
+                                width: 50,
+                                child: Card(
+                                  child: IconButton(
+                                    icon: Icon(Icons.mail_outline),
+                                    onPressed: (){
+                                      html.window.open('mailto:immadirajendra.sai@gmail.com', 'Mail');
+                                    },
+                                  ),
+                                ).showCursorOnHover.moveUpOnHover,
+                              ),
                             ],
                           ),
                         ],

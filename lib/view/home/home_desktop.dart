@@ -49,11 +49,11 @@ class _HomeDesktop extends State<HomeDesktop> {
                     child: Padding(
                       padding: const EdgeInsets.only(top: 50),
                       child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: <Widget>[
                           Padding(
-                            padding: const EdgeInsets.only(left: 300),
+                            padding: const EdgeInsets.only(right: 30),
                             child: CircularPercentIndicator(
                               radius: 140.0,
                               lineWidth: 5.0,
@@ -72,7 +72,7 @@ class _HomeDesktop extends State<HomeDesktop> {
                             ),
                           ),
                           Padding(
-                            padding: const EdgeInsets.only(right: 300),
+                            padding: const EdgeInsets.only(left: 30),
                             child: SizedBox(
                               width: 500,
                               child: Column(
@@ -86,7 +86,7 @@ class _HomeDesktop extends State<HomeDesktop> {
                                         pause: Duration(milliseconds:  1000),
                                         text: ["Sai Rajendra Immadi"],
                                         speed: Duration(milliseconds: 300),
-                                        textStyle: TextStyle(fontSize: 35.0, color: Colors.white, fontWeight: FontWeight.w800),
+                                        textStyle: TextStyle(fontSize: 36.0, color: Colors.white, fontWeight: FontWeight.w800,letterSpacing: 1, ),
                                       ),
                                     ),
                                   ),
@@ -97,7 +97,7 @@ class _HomeDesktop extends State<HomeDesktop> {
                                         'Open-Source Enthusiast | Musician',
                                         textAlign: TextAlign.start,
                                         style: TextStyle(
-                                          fontSize: 16.0,
+                                          fontSize: 17.0,
                                           color: CustomColors.cSubHeading,
                                           fontWeight: FontWeight.w400,
                                         ),
@@ -111,7 +111,7 @@ class _HomeDesktop extends State<HomeDesktop> {
                                         'Mentor and Member @amFOSS',
                                         textAlign: TextAlign.start,
                                         style: TextStyle(
-                                          fontSize: 16.0,
+                                          fontSize: 17.0,
                                           color: CustomColors.cSubHeading,
                                           fontWeight: FontWeight.w400,
                                         ),

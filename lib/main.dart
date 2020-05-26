@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:website/view/home/home.dart';
+import 'package:website/extensions/glow_behaviour.dart';
 
 void main() {
   runApp(MyApp());
@@ -32,6 +33,12 @@ class MyApp extends StatelessWidget {
       // routes: {
       //   '/': (context) => HomePage(),
       // },
+      builder: (context, child) {
+      return ScrollConfiguration(
+        behavior: GlowBehavior(),
+        child: child,
+    );
+  },
       home: Home(),
     );
   }
