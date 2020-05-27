@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:website/constants/constants.dart';
 import 'package:website/theme/colors.dart';
 import 'package:website/widgets/top_container.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:website/extensions/hover_extensions.dart';
+import 'package:website/widgets/end_drawer.dart';
 
 import 'dart:html' as html;
 
@@ -26,11 +28,15 @@ class HomeDesktop extends StatefulWidget {
 
 class _HomeDesktop extends State<HomeDesktop> {
 
+  final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
+
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: Colors.white,
+      key: _scaffoldKey,
+      endDrawer: endDrawer(context, 0.2, 20),
       body: SafeArea(
         child: Column(
           children: [
@@ -39,10 +45,15 @@ class _HomeDesktop extends State<HomeDesktop> {
               width: width,
               child: Column(
                 children: [
-                  Align(
-                    alignment: Alignment.centerRight,
-                    // TODO: Change red to white and then add menu
-                    child: Icon(Icons.menu, color: CustomColors.cRed, size: 30.0),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 10),
+                    child: Align(
+                      alignment: Alignment.centerRight,
+                      child: GestureDetector(
+                        child: Icon(Icons.menu, color: Colors.white, size: 30.0),
+                        onTap: () { _scaffoldKey.currentState.openEndDrawer(); }
+                      ).showCursorOnHover,
+                    ),
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 0.0),
@@ -84,7 +95,7 @@ class _HomeDesktop extends State<HomeDesktop> {
                                       child: TypewriterAnimatedTextKit(
                                         totalRepeatCount: 1,
                                         pause: Duration(milliseconds:  1000),
-                                        text: ["Sai Rajendra Immadi"],
+                                        text: MyConstants.of(context).headName,
                                         speed: Duration(milliseconds: 300),
                                         textStyle: TextStyle(fontSize: 36.0, color: Colors.white, fontWeight: FontWeight.w800,letterSpacing: 1, ),
                                       ),
@@ -94,7 +105,7 @@ class _HomeDesktop extends State<HomeDesktop> {
                                     padding: const EdgeInsets.only(top: 5),
                                     child: Container(
                                       child: Text(
-                                        'Open-Source Enthusiast | Musician',
+                                        MyConstants.of(context).tag0,
                                         textAlign: TextAlign.start,
                                         style: TextStyle(
                                           fontSize: 17.0,
@@ -108,7 +119,7 @@ class _HomeDesktop extends State<HomeDesktop> {
                                     padding: const EdgeInsets.only(top: 10),
                                     child: Container(
                                       child: Text(
-                                        'Mentor and Member @amFOSS',
+                                        MyConstants.of(context).tag1,
                                         textAlign: TextAlign.start,
                                         style: TextStyle(
                                           fontSize: 17.0,
@@ -144,7 +155,7 @@ class _HomeDesktop extends State<HomeDesktop> {
                             child: SizedBox(
                               width: 500,
                               child: Text(
-                                'I am Sai Rajendra Immadi, from Hyderabad, B.Tech in CSE at Amrita Vishwa Vidhyapeetham, Amritapuri Campus, India. An open-source enthusiast with proficiency in Android Application Development. Have keen interest to learn new things and able to grasp quickly. I am also a Musician, learning Tabla from age 5.',
+                                MyConstants.of(context).about,
                                 style: TextStyle(
                                   fontSize: 19,
                                   wordSpacing: 1,
@@ -158,7 +169,7 @@ class _HomeDesktop extends State<HomeDesktop> {
                           Padding(
                             padding: const EdgeInsets.only(left: 20, right: 20, top: 20, bottom: 20),
                             child: Text(
-                              '"Live the life upto your Maximum"',
+                              MyConstants.of(context).quote,
                               style: TextStyle(
                                 fontSize: 20,
                                 color: CustomColors.cRed,

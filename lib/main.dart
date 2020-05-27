@@ -1,9 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:website/view/home/home.dart';
+import 'package:website/constants/constants.dart';
 import 'package:website/extensions/glow_behaviour.dart';
 
+import 'package:website/view/home/home.dart';
+import 'package:website/view/profile/profile.dart';
+import 'package:website/view/blog/blog.dart';
+
 void main() {
-  runApp(MyApp());
+  runApp(
+    MyConstants(
+      child: MyApp(),
+    )
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -13,6 +21,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Sai Rajendra Immadi',
       debugShowCheckedModeBanner: false,
+      
+      initialRoute: Home.route,
+      routes: {
+        Home.route: (context) => Home(),
+        Profile.route: (context) => Profile(),
+        Blog.route: (context) => Blog(),
+      },
+
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -29,17 +45,12 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      // initialRoute: '/',
-      // routes: {
-      //   '/': (context) => HomePage(),
-      // },
       builder: (context, child) {
-      return ScrollConfiguration(
-        behavior: GlowBehavior(),
-        child: child,
-    );
-  },
-      home: Home(),
+        return ScrollConfiguration(
+          behavior: GlowBehavior(),
+          child: child,
+      );
+    },
     );
   }
 }
