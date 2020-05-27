@@ -33,6 +33,7 @@ Widget endDrawer(BuildContext context, double widthFactor, double textSize) {
                     style: TextStyle(color: Colors.white, fontSize: textSize),
                   ).showCursorOnHover.moveUpOnHover,
                   onTap: () {
+                    Navigator.of(context).pop();
                     Navigator.of(context).pushNamed(Home.route);
                   },
                 ),
@@ -42,6 +43,7 @@ Widget endDrawer(BuildContext context, double widthFactor, double textSize) {
                     style: TextStyle(color: Colors.white, fontSize: textSize),
                   ).showCursorOnHover.moveUpOnHover,
                   onTap: () {
+                    Navigator.of(context).pop();
                     Navigator.of(context).pushNamed(Profile.route);
                   },
                 ),
@@ -51,6 +53,7 @@ Widget endDrawer(BuildContext context, double widthFactor, double textSize) {
                     style: TextStyle(color: Colors.white, fontSize: textSize),
                   ).showCursorOnHover.moveUpOnHover,
                   onTap: () {
+                    Navigator.of(context).pop();
                     Navigator.of(context).pushNamed(Blog.route);
                   },
                 ),

@@ -6,6 +6,7 @@ class MyConstants extends InheritedWidget {
   const MyConstants({Widget child, Key key}): super(key: key, child: child);
 
   // Home Constants
+  final String profileImage = 'assets/Rajendra.jpg';
   final List<String> headName = const ["Sai Rajendra Immadi"];
   final String tag0 = 'Open-Source Enthusiast | Musician';
   final String tag1 = 'Mentor and Member @amFOSS';
