@@ -15,6 +15,14 @@ extension HoverExtensions on Widget {
     );
   }
 
+  Widget get removeCursorOnHover {
+    return MouseRegion(
+      child: this, // the widget we're using the extension on
+      onHover: (event) => appContainer.style.cursor = 'default',
+      onExit: (event) => appContainer.style.cursor = 'default',
+    );
+  }
+
   Widget get moveUpOnHover {
     return TranslateOnHover(
       child: this,

@@ -3,7 +3,6 @@ import 'package:website/theme/colors.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 import 'package:website/constants/constants.dart';
 import 'package:website/extensions/hover_extensions.dart';
-import 'package:path/path.dart';
 
 import 'package:website/view/home/home.dart';
 import 'package:website/view/profile/profile.dart';

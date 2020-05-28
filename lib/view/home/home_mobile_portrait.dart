@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:website/constants/constants.dart';
 import 'package:website/theme/colors.dart';
+import 'package:website/widgets/social_icons.dart';
 import 'package:website/widgets/top_container.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:website/extensions/hover_extensions.dart';
 import 'package:website/widgets/end_drawer.dart';
-
-import 'dart:html' as html;
 
 class HomeMobilePortrait extends StatefulWidget {
   HomeMobilePortrait({Key key}) : super(key: key);
@@ -151,83 +149,7 @@ class _HomeMobilePortrait extends State<HomeMobilePortrait> {
                               ),
                             ),
                           ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              SizedBox(
-                                height: 50,
-                                width: 50,
-                                child: Card(
-                                  child: IconButton(
-                                    icon: FaIcon(FontAwesomeIcons.github),
-                                    onPressed: (){
-                                      html.window.open('https://github.com/immadisairaj/', 'GitHub');
-                                    },
-                                  ),
-                                ).showCursorOnHover.moveUpOnHover,
-                              ),
-                              SizedBox(
-                                height: 50,
-                                width: 50,
-                                child: Card(
-                                  child: IconButton(
-                                    icon: FaIcon(FontAwesomeIcons.gitlab),
-                                    onPressed: (){
-                                      html.window.open('https://gitlab.com/immadisairaj', 'GitLab');
-                                    },
-                                  ),
-                                ).showCursorOnHover.moveUpOnHover,
-                              ),
-                              SizedBox(
-                                height: 50,
-                                width: 50,
-                                child: Card(
-                                  child: IconButton(
-                                    icon: FaIcon(FontAwesomeIcons.linkedinIn),
-                                    onPressed: (){
-                                      html.window.open('https://www.linkedin.com/in/immadisairaj/', 'LinkedIn');
-                                    },
-                                  ),
-                                ).showCursorOnHover.moveUpOnHover,
-                              ),
-                              SizedBox(
-                                height: 50,
-                                width: 50,
-                                child: Card(
-                                  child: IconButton(
-                                    icon: FaIcon(FontAwesomeIcons.twitter),
-                                    onPressed: (){
-                                      html.window.open('https://twitter.com/immadisairaj', 'Twitter');
-                                    },
-                                  ),
-                                ).showCursorOnHover.moveUpOnHover,
-                              ),
-                              SizedBox(
-                                height: 50,
-                                width: 50,
-                                child: Card(
-                                  child: IconButton(
-                                    icon: FaIcon(FontAwesomeIcons.instagram),
-                                    onPressed: (){
-                                      html.window.open('https://www.instagram.com/immadisairaj/', 'Instagram');
-                                    },
-                                  ),
-                                ).showCursorOnHover.moveUpOnHover,
-                              ),
-                              SizedBox(
-                                height: 50,
-                                width: 50,
-                                child: Card(
-                                  child: IconButton(
-                                    icon: Icon(Icons.mail_outline),
-                                    onPressed: (){
-                                      html.window.open('mailto:immadirajendra.sai@gmail.com', 'Mail');
-                                    },
-                                  ),
-                                ).showCursorOnHover.moveUpOnHover,
-                              ),
-                            ],
-                          ),
+                          socialIcons(context, 50),
                         ],
                       ),
                     ),

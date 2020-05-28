@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:website/constants/constants.dart';
 import 'package:website/theme/colors.dart';
-import 'package:website/widgets/top_container.dart';
-import 'package:percent_indicator/percent_indicator.dart';
-import 'package:animated_text_kit/animated_text_kit.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:website/widgets/slider.dart';
 import 'package:website/extensions/hover_extensions.dart';
 import 'package:website/widgets/top_navigation_bar.dart';
 
@@ -26,13 +23,135 @@ class _ProfileDesktop extends State<ProfileDesktop> {
       backgroundColor: Colors.white,
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             topNavigarionBar(context),
             Expanded(
               child: SingleChildScrollView(
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text('Profile: Under Construction!'),
+                    Padding(
+                      padding: EdgeInsets.only(left: 80, right: 80, top: 40),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: [
+                          GestureDetector(
+                            child: Text(
+                              'Resume',
+                              style: TextStyle(
+                                color: CustomColors.cRed,
+                                fontSize: 23,
+                                fontWeight: FontWeight.w700
+                              ),
+                            ),
+                            onTap: () {
+                              html.window.open(MyConstants.of(context).resumeLink, 'Resume');
+                            },
+                          ).showCursorOnHover,
+                          Padding(
+                            padding: const EdgeInsets.only(left: 20),
+                            child: Text(
+                              '- click to get the Resume',
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 16,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(left: 80, right: 80, top: 40),
+                      child: Text(
+                        'Projects',
+                        style: TextStyle(
+                          color: CustomColors.cRed,
+                          fontSize: 23,
+                          fontWeight: FontWeight.w700
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(left: 120, right: 120, top: 20),
+                      child: sliderWithLink(context, 200, width, 1, MyConstants.of(context).projects, false),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(left: 80, right: 80, top: 40),
+                      child: Text(
+                        'Experience',
+                        style: TextStyle(
+                          color: CustomColors.cRed,
+                          fontSize: 23,
+                          fontWeight: FontWeight.w700
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(left: 120, right: 120, top: 20),
+                      child: sliderWithoutLink(context, 210, width, 1, MyConstants.of(context).experience, false),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(left: 80, right: 80, top: 40),
+                      child: Text(
+                        'Open Source',
+                        style: TextStyle(
+                          color: CustomColors.cRed,
+                          fontSize: 23,
+                          fontWeight: FontWeight.w700
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(left: 120, right: 120, top: 20),
+                      child: sliderWithLink(context, 210, width, 1, MyConstants.of(context).opensource, false),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(left: 80, right: 80, top: 40),
+                      child: Text(
+                        'Internships',
+                        style: TextStyle(
+                          color: CustomColors.cRed,
+                          fontSize: 23,
+                          fontWeight: FontWeight.w700
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(left: 120, right: 120, top: 20),
+                      child: sliderWithoutLink(context, 210, width, 1, MyConstants.of(context).internships, false),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(left: 80, right: 80, top: 40),
+                      child: Text(
+                        'Certifications',
+                        style: TextStyle(
+                          color: CustomColors.cRed,
+                          fontSize: 23,
+                          fontWeight: FontWeight.w700
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(left: 120, right: 120, top: 20),
+                      child: sliderWithLink(context, 210, width, 1, MyConstants.of(context).certificates, false),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(left: 80, right: 80, top: 40),
+                      child: Text(
+                        'Others',
+                        style: TextStyle(
+                          color: CustomColors.cRed,
+                          fontSize: 23,
+                          fontWeight: FontWeight.w700
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(left: 120, right: 120, top: 20, bottom: 40),
+                      child: sliderWithoutLink(context, 210, width, 1, MyConstants.of(context).others, false),
+                    ),
                   ],
                 ),
               ),
