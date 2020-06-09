@@ -6,7 +6,8 @@ import 'package:website/extensions/hover_extensions.dart';
 
 import 'package:website/view/home/home.dart';
 import 'package:website/view/profile/profile.dart';
-import 'package:website/view/blog/blog.dart';
+
+import 'dart:html' as html;
 
 Widget topNavigarionBar(BuildContext context) {
   double width = MediaQuery.of(context).size.width;
@@ -73,8 +74,7 @@ Widget topNavigarionBar(BuildContext context) {
                     style: TextStyle(fontSize: 19.0, color: Colors.white, fontWeight: FontWeight.w600, ),
                   ),
                   onTap: () {
-                    if(ModalRoute.of(context).settings.name != Blog.route)
-                      Navigator.of(context).pushNamed(Blog.route);
+                    html.window.location.assign(MyConstants.of(context).blog);
                   },
                 ).showCursorOnHover.moveUpOnHover,
               ),

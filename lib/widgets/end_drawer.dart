@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:website/constants/constants.dart';
 import 'package:website/theme/colors.dart';
 import 'package:website/extensions/hover_extensions.dart';
 
 import 'package:website/view/home/home.dart';
 import 'package:website/view/profile/profile.dart';
-import 'package:website/view/blog/blog.dart';
+
+import 'dart:html' as html;
 
 Widget endDrawer(BuildContext context, double widthFactor, double textSize) {
   return SizedBox(
@@ -54,7 +56,7 @@ Widget endDrawer(BuildContext context, double widthFactor, double textSize) {
                   ).showCursorOnHover.moveUpOnHover,
                   onTap: () {
                     Navigator.of(context).pop();
-                    Navigator.of(context).pushNamed(Blog.route);
+                    html.window.location.assign(MyConstants.of(context).blog);
                   },
                 ),
               ],

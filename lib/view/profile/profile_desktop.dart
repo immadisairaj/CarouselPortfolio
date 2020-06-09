@@ -46,7 +46,7 @@ class _ProfileDesktop extends State<ProfileDesktop> {
                               ),
                             ),
                             onTap: () {
-                              html.window.open(MyConstants.of(context).resumeLink, 'Resume');
+                              html.window.open('assets/'+MyConstants.of(context).resume, 'Resume');
                             },
                           ).showCursorOnHover,
                           Padding(
@@ -74,8 +74,8 @@ class _ProfileDesktop extends State<ProfileDesktop> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(left: 120, right: 120, top: 20),
-                      child: sliderWithLink(context, 200, width, 1, MyConstants.of(context).projects, false),
+                      padding: EdgeInsets.only(left: 80, right: 80, top: 20),
+                      child: slider(context, 200, width, 1, MyConstants.of(context).projects, false),
                     ),
                     Padding(
                       padding: EdgeInsets.only(left: 80, right: 80, top: 40),
@@ -89,8 +89,8 @@ class _ProfileDesktop extends State<ProfileDesktop> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(left: 120, right: 120, top: 20),
-                      child: sliderWithoutLink(context, 210, width, 1, MyConstants.of(context).experience, false),
+                      padding: EdgeInsets.only(left: 80, right: 80, top: 20),
+                      child: slider(context, 210, width, 1, MyConstants.of(context).experience, false),
                     ),
                     Padding(
                       padding: EdgeInsets.only(left: 80, right: 80, top: 40),
@@ -104,8 +104,8 @@ class _ProfileDesktop extends State<ProfileDesktop> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(left: 120, right: 120, top: 20),
-                      child: sliderWithLink(context, 210, width, 1, MyConstants.of(context).opensource, false),
+                      padding: EdgeInsets.only(left: 80, right: 80, top: 20),
+                      child: slider(context, 210, width, 1, MyConstants.of(context).opensource, false),
                     ),
                     Padding(
                       padding: EdgeInsets.only(left: 80, right: 80, top: 40),
@@ -119,8 +119,8 @@ class _ProfileDesktop extends State<ProfileDesktop> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(left: 120, right: 120, top: 20),
-                      child: sliderWithoutLink(context, 210, width, 1, MyConstants.of(context).internships, false),
+                      padding: EdgeInsets.only(left: 80, right: 80, top: 20),
+                      child: slider(context, 210, width, 1, MyConstants.of(context).internships, false),
                     ),
                     Padding(
                       padding: EdgeInsets.only(left: 80, right: 80, top: 40),
@@ -134,8 +134,8 @@ class _ProfileDesktop extends State<ProfileDesktop> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(left: 120, right: 120, top: 20),
-                      child: sliderWithLink(context, 210, width, 1, MyConstants.of(context).certificates, false),
+                      padding: EdgeInsets.only(left: 80, right: 80, top: 20),
+                      child: slider(context, 210, width, 1, MyConstants.of(context).certificates, false),
                     ),
                     Padding(
                       padding: EdgeInsets.only(left: 80, right: 80, top: 40),
@@ -149,8 +149,8 @@ class _ProfileDesktop extends State<ProfileDesktop> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(left: 120, right: 120, top: 20, bottom: 40),
-                      child: sliderWithoutLink(context, 210, width, 1, MyConstants.of(context).others, false),
+                      padding: EdgeInsets.only(left: 80, right: 80, top: 20, bottom: 40),
+                      child: slider(context, 210, width, 1, MyConstants.of(context).others, false),
                     ),
                   ],
                 ),

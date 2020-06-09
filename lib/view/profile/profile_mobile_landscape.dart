@@ -45,7 +45,7 @@ class _ProfileMobileLandscape extends State<ProfileMobileLandscape> {
                               ),
                             ),
                             onTap: () {
-                              html.window.open(MyConstants.of(context).resumeLink, 'Resume');
+                              html.window.open('assets/'+MyConstants.of(context).resume, 'Resume');
                             },
                           ).showCursorOnHover,
                           Padding(
@@ -74,7 +74,7 @@ class _ProfileMobileLandscape extends State<ProfileMobileLandscape> {
                     ),
                     Padding(
                       padding: EdgeInsets.only(left: 30, right: 30, top: 20),
-                      child: sliderWithLink(context, 220, width, 0.8, MyConstants.of(context).projects, true),
+                      child: slider(context, 220, width, 0.8, MyConstants.of(context).projects, true),
                     ),
                     Padding(
                       padding: EdgeInsets.only(left: 20, right: 20, top: 20),
@@ -89,7 +89,7 @@ class _ProfileMobileLandscape extends State<ProfileMobileLandscape> {
                     ),
                     Padding(
                       padding: EdgeInsets.only(left: 30, right: 30, top: 20),
-                      child: sliderWithoutLink(context, 250, width, 0.8, MyConstants.of(context).experience, true),
+                      child: slider(context, 250, width, 0.8, MyConstants.of(context).experience, true),
                     ),
                     Padding(
                       padding: EdgeInsets.only(left: 20, right: 20, top: 20),
@@ -104,7 +104,7 @@ class _ProfileMobileLandscape extends State<ProfileMobileLandscape> {
                     ),
                     Padding(
                       padding: EdgeInsets.only(left: 30, right: 30, top: 20),
-                      child: sliderWithLink(context, 250, width, 0.8, MyConstants.of(context).opensource, true),
+                      child: slider(context, 250, width, 0.8, MyConstants.of(context).opensource, true),
                     ),
                     Padding(
                       padding: EdgeInsets.only(left: 20, right: 20, top: 20),
@@ -119,7 +119,7 @@ class _ProfileMobileLandscape extends State<ProfileMobileLandscape> {
                     ),
                     Padding(
                       padding: EdgeInsets.only(left: 30, right: 30, top: 20),
-                      child: sliderWithoutLink(context, 220, width, 0.8, MyConstants.of(context).internships, true),
+                      child: slider(context, 220, width, 0.8, MyConstants.of(context).internships, true),
                     ),
                     Padding(
                       padding: EdgeInsets.only(left: 20, right: 20, top: 20),
@@ -134,7 +134,7 @@ class _ProfileMobileLandscape extends State<ProfileMobileLandscape> {
                     ),
                     Padding(
                       padding: EdgeInsets.only(left: 30, right: 30, top: 20),
-                      child: sliderWithLink(context, 200, width, 0.8, MyConstants.of(context).certificates, true),
+                      child: slider(context, 200, width, 0.8, MyConstants.of(context).certificates, true),
                     ),
                     Padding(
                       padding: EdgeInsets.only(left: 20, right: 20, top: 20),
@@ -149,7 +149,7 @@ class _ProfileMobileLandscape extends State<ProfileMobileLandscape> {
                     ),
                     Padding(
                       padding: EdgeInsets.only(left: 30, right: 30, top: 20, bottom: 20),
-                      child: sliderWithoutLink(context, 250, width, 0.8, MyConstants.of(context).others, true),
+                      child: slider(context, 250, width, 0.8, MyConstants.of(context).others, true),
                     ),
                   ],
                 ),

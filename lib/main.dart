@@ -4,7 +4,6 @@ import 'package:website/extensions/glow_behaviour.dart';
 
 import 'package:website/view/home/home.dart';
 import 'package:website/view/profile/profile.dart';
-import 'package:website/view/blog/blog.dart';
 
 void main() {
   runApp(
@@ -26,7 +25,6 @@ class MyApp extends StatelessWidget {
       routes: {
         Home.route: (context) => Home(),
         Profile.route: (context) => Profile(),
-        Blog.route: (context) => Blog(),
       },
 
       theme: ThemeData(
