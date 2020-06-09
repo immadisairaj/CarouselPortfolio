@@ -14,7 +14,7 @@ class MyConstants extends InheritedWidget {
   final String quote = '"Live the life upto your Maximum"';
 
   // Blog Link
-  final String blog = 'https://immadisairaj.wordpress.com/';  // location of blog (can be a separate http link also)
+  final String blog = '/blog';  // location of blog (can be a separate http link also)
 
   // Profile Constants
   final String resume = 'assets/Rajendra_CV.pdf'; // location of resume (can be a separate http link also)
