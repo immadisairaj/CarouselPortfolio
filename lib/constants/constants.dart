@@ -24,6 +24,7 @@ class MyConstants extends InheritedWidget {
   // if there is anything not needed, then it can be left blank
   // example if link is not needed - ['year', 'projectName', 'subTitle', 'description', ''],
   final List<List<String>> projects = const [
+    ['2020', 'Portfolio', '', 'A personal website built using flutter to showcase themselves which also includes google analytics tracking for the site', 'https://github.com/immadisairaj/Portfolio'],
     ['2020', 'Distributed Group Chat System', '', 'Terminal based Distributed Group Chat System built in Java using Remote Method Invocation(RMI)', 'https://github.com/immadisairaj/distributedGroupChatSystem'],
     ['2019', 'Harry Potter', '', 'A Flutter Cilent which can be used to see the details of harry potter using potterapi', 'https://github.com/immadisairaj/harry_potter'],
     ['2019', 'Temple App', 'Maintainer', 'An open-source android application which keeps track of all the financial details related to a temple', 'https://gitlab.com/amfoss/TempleApp'],
