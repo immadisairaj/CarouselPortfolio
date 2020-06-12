@@ -96,6 +96,10 @@ This website supports google analytics. You can replace 'UA-XXXXXXXXX-X' with yo
 - [Responsive Builder](https://pub.dev/packages/responsive_builder): v0.1.4
 - [Carousel Slider](https://pub.dev/packages/carousel_slider): v2.0.0
 
+### License
+
+This work is licensed under a [MIT License](https://github.com/immadisairaj/Portfolio/blob/master/LICENSE.md).
+
 ### Getting Started with Flutter
 
 This project is a starting point for a Flutter application.
