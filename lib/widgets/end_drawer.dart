@@ -63,11 +63,21 @@ Widget endDrawer(BuildContext context, double widthFactor, double textSize) {
             ),
             Padding(
               padding: const EdgeInsets.only(left: 20.0, right: 20.0, bottom: 10.0),
-              child: Text(
-                'Made with Flutter',
-                style: TextStyle(
-                  color: CustomColors.cSubHeading
-                ),
+              child: Column(
+                children: [
+                  Text(
+                    'Made with Flutter',
+                    style: TextStyle(
+                      color: CustomColors.cSubHeading
+                    ),
+                  ),
+                  Text(
+                    '© 2020 ${MyConstants.of(context).headName[0]}',
+                    style: TextStyle(
+                      color: CustomColors.cSubHeading
+                    ),
+                  ),
+                ],
               ),
             ),
           ],
