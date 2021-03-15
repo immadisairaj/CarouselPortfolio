@@ -33,23 +33,28 @@ class _ProfileMobileLandscape extends State<ProfileMobileLandscape> {
                     Padding(
                       padding: EdgeInsets.only(left: 20, right: 20, top: 20),
                       child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.end,
+                        crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          GestureDetector(
-                            child: Text(
+                          ElevatedButton.icon(
+                            label: Text(
                               'Resume',
                               style: TextStyle(
-                                color: CustomColors.cRed,
-                                fontSize: 23,
-                                fontWeight: FontWeight.w700
+                                color: Colors.white,
+                                fontSize: 18,
+                                fontWeight: FontWeight.w500
                               ),
                             ),
-                            onTap: () {
+                            icon: Icon(Icons.article_outlined),
+                            style: ButtonStyle(
+                              elevation: MaterialStateProperty.all<double>(7),
+                              backgroundColor: MaterialStateProperty.all<Color>(CustomColors.cRed),
+                            ),
+                            onPressed: () {
                               html.window.open('assets/'+MyConstants.of(context).resume, 'Resume');
                             },
                           ).showCursorOnHover,
                           Padding(
-                            padding: const EdgeInsets.only(left: 20),
+                            padding: const EdgeInsets.only(left: 10),
                             child: Text(
                               '- click to get the Resume',
                               style: TextStyle(

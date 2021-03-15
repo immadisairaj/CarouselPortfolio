@@ -42,9 +42,11 @@ class MyConstants extends InheritedWidget {
     ['2019', 'FOSSASIA', 'Contributor', 'Actively contributed to the project Susi Android of the organisation and have 11 merged patches. The main feature of the app is to provide a conversational interface to provide intelligent answers using the loklak/AskSusi infrastructure.', 'https://github.com/fossasia/susi_android/'],
   ];
   final List<List<String>> internships = const [
+    ['Jan 2021 - Present', 'IBM', 'Software Developer', 'Working on a Full-Stack web application.', ''],
     ['Aug 2019 - Dec 2019', 'IndieMakers', 'Frontend Developer', 'Built a cross-platform mobile application which supports both iOS and Android. The platform helps different cinema enthusiasts get connected. Built the front-end application from scratch based on the UI designs provided.', ''],
   ];
   final List<List<String>> certificates = const [
+    ['2020', 'Full Stack: Angular and Java Spring Boot', 'by Udemy', 'Credential ID: UC-32517dd1-4804-4746-bef9-9a084cdde3d8', 'https://www.udemy.com/certificate/UC-32517dd1-4804-4746-bef9-9a084cdde3d8/'],
     ['2020', 'PCDP Specialization', 'by Coursera', 'Credential ID: GQGL9WEZLV5Z', 'https://www.coursera.org/account/accomplishments/specialization/certificate/GQGL9WEZLV5Z'],
     ['2020', 'Parallel Programming in Java', 'by Coursera', 'Credential ID: VDWYWKLSRDTU', 'https://www.coursera.org/account/accomplishments/certificate/VDWYWKLSRDTU'],
     ['2020', 'Concurrent Programming in Java', 'by Coursera', 'Credential ID: 42DQMGDTC9GR', 'https://www.coursera.org/account/accomplishments/certificate/42DQMGDTC9GR'],
