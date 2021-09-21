@@ -14,7 +14,7 @@ Widget socialIcons(BuildContext context, double size) {
         child: Card(
           child: IconButton(
             icon: FaIcon(FontAwesomeIcons.github),
-            onPressed: (){
+            onPressed: () {
               html.window.open('https://github.com/immadisairaj/', 'GitHub');
             },
           ),
@@ -26,7 +26,7 @@ Widget socialIcons(BuildContext context, double size) {
         child: Card(
           child: IconButton(
             icon: FaIcon(FontAwesomeIcons.gitlab),
-            onPressed: (){
+            onPressed: () {
               html.window.open('https://gitlab.com/immadisairaj', 'GitLab');
             },
           ),
@@ -38,8 +38,9 @@ Widget socialIcons(BuildContext context, double size) {
         child: Card(
           child: IconButton(
             icon: FaIcon(FontAwesomeIcons.linkedinIn),
-            onPressed: (){
-              html.window.open('https://www.linkedin.com/in/immadisairaj/', 'LinkedIn');
+            onPressed: () {
+              html.window.open(
+                  'https://www.linkedin.com/in/immadisairaj/', 'LinkedIn');
             },
           ),
         ).showCursorOnHover.moveUpOnHover,
@@ -50,7 +51,7 @@ Widget socialIcons(BuildContext context, double size) {
         child: Card(
           child: IconButton(
             icon: FaIcon(FontAwesomeIcons.twitter),
-            onPressed: (){
+            onPressed: () {
               html.window.open('https://twitter.com/immadisairaj', 'Twitter');
             },
           ),
@@ -62,8 +63,9 @@ Widget socialIcons(BuildContext context, double size) {
         child: Card(
           child: IconButton(
             icon: FaIcon(FontAwesomeIcons.instagram),
-            onPressed: (){
-              html.window.open('https://www.instagram.com/immadisairaj/', 'Instagram');
+            onPressed: () {
+              html.window
+                  .open('https://www.instagram.com/immadisairaj/', 'Instagram');
             },
           ),
         ).showCursorOnHover.moveUpOnHover,
@@ -74,8 +76,8 @@ Widget socialIcons(BuildContext context, double size) {
         child: Card(
           child: IconButton(
             icon: Icon(Icons.mail_outline),
-            onPressed: (){
-              html.window.open('mailto:immadirajendra.sai@gmail.com', 'Mail');
+            onPressed: () {
+              html.window.open('mailto:immadisairaj@immadisairaj.me', 'Mail');
             },
           ),
         ).showCursorOnHover.moveUpOnHover,
