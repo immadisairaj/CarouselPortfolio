@@ -77,7 +77,7 @@ Widget socialIcons(BuildContext context, double size) {
           child: IconButton(
             icon: Icon(Icons.mail_outline),
             onPressed: () {
-              html.window.open('mailto:immadisairaj@immadisairaj.me', 'Mail');
+              html.window.open('mailto:immadirajendra.sai@gmail.com', 'Mail');
             },
           ),
         ).showCursorOnHover.moveUpOnHover,
