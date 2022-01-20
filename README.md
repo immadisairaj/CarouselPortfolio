@@ -1,6 +1,11 @@
-# Personal Portfolio
+| Not updating anything in this now and will stay still |
+|-|
 
-This project made with Flutter and hosted in the [website](https://immadisairaj.github.io).
+The project demo (along with data till this point) will stay in the website under /carousel-portfolio
+
+# Personal Carousel Portfolio
+
+This project made with Flutter and hosted in the [website](https://immadisairaj.github.io/carousel-portfolio).
 
 ## About Website
 
@@ -17,7 +22,7 @@ Follow the following to build the website:
 -> Clone the Project
 
 ```
-git clone https://github.com/<username>/Portfolio
+git clone https://github.com/<username>/CarouselPortfolio
 ```
 
 Here *username* is your github username
@@ -25,7 +30,7 @@ Here *username* is your github username
 -> Open the directory
 
 ```
-cd Portfolio
+cd CarouselPortfolio
 ```
 
 -> If you want to build locally (given flutter is already installed, including web version)
@@ -98,7 +103,7 @@ This website supports google analytics. You can replace 'UA-XXXXXXXXX-X' with yo
 
 ### License
 
-This work is licensed under a [MIT License](https://github.com/immadisairaj/Portfolio/blob/master/LICENSE.md).
+This work is licensed under a [MIT License](https://github.com/immadisairaj/CarouselPortfolio/blob/master/LICENSE.md).
 
 ### Getting Started with Flutter
 
