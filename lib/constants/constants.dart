@@ -38,10 +38,10 @@ class MyConstants extends InheritedWidget {
     ],
     [
       '2020',
-      'Portfolio Template',
+      'Carousel Portfolio Template',
       '',
       'The application allows people to have an online presence with their own personal website with which they can demonstrate their skills and projects',
-      'https://github.com/immadisairaj/Portfolio'
+      'https://github.com/immadisairaj/CarouselPortfolio'
     ],
     [
       '2020',
