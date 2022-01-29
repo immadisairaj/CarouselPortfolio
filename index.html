@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Website made with Flutter by Sai Rajendra Immadi">
+
+  <html prefix="og: http://ogp.me/ns#">
+  <meta property="og:url" content="https://immadisairaj.github.io/" />
+  <meta property="og:image" content="logo.png" />
+  <meta property="og:title" content="immadisairaj" />
+  <meta property="og:description" content="Website made with Flutter by Sai Rajendra Immadi" />
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Sai Rajendra Immadi">
+  <link rel="apple-touch-icon" href="logo.png">
+  <!-- Replace Favicon with Custom logo -->
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="logo.png"/>
+  <!-- Replace Favicon with Custom logo -->
+
+  <!-- The Following is for Google Analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- Replace UA-XXXXXXXXX-X with Google Analytics ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168944360-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    // Replace UA-XXXXXXXXX-X with Google Analytics ID
+    gtag('config', 'UA-168944360-2', { send_page_view: false });
+  </script>
+
+  <title>Sai Rajendra Immadi</title>
+  <link rel="manifest" href="manifest.json">
+  <script src="app.js" defer></script>
+</head>
+<body id="app-container">
+  <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js?v=3364187664');
+      });
+    }
+  </script>
+  <script src="main.dart.js" type="application/javascript"></script>
+</body>
+</html>
